@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'question': 'What was the completion rate for medical health training ?',
+        'question': 'What was the completion rate for manager medical health training ?',
     }
     
     try:
