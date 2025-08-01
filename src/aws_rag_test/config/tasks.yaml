@@ -1,0 +1,15 @@
+research_task:
+  description: >
+    Use the AWS Bedrock knowledge base tool to gather detailed and accurate information in response to the following question: {question}.
+    Make sure you explore all available knowledge base sources and highlight particularly insightful findings.
+  expected_output: >
+    A list of 10 bullet points summarizing the most relevant facts or insights related to {question}, extracted from the knowledge base.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the research findings and synthesize them into a structured and informative report.
+    Each bullet point should be expanded into a comprehensive section that addresses the question: {question}.
+  expected_output: >
+    A detailed markdown report with clearly defined sections based on the research points, written without using '```'.
+  agent: reporting_analyst
